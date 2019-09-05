@@ -23,13 +23,13 @@ function writeToFile() {
   console.log(freeMem);
 }
 
-function myLoop() { //  create a loop function
-  setTimeout(function() { //  call a 3s setTimeout when the loop is called
-    main(); //  your code here
-    numOfTabs++; //  increment the counter
-    if (numOfTabs < 100000) { //  if the counter < 10, call the loop function
-      myLoop(); //  ..  again which will trigger another
-    } //  ..  setTimeout()
+function myLoop() { 
+  setTimeout(function() { 
+    main(); 
+    numOfTabs++; 
+    if (numOfTabs < 100000) { 
+      myLoop(); 
+    } 
   }, 250)
 }
 
